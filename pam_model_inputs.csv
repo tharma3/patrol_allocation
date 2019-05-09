@@ -1,0 +1,190 @@
+﻿field_name,Code,Values,Formula
+Name of the APA,1.1,,
+Shift length (hours),1.2.1,8,
+Average work week (hours),1.2.2.1,40,
+Average number of benefit (paid) off-duty hours per year per officer ,1.2.2.2,200,vacation_days (25) * shift_length
+AverGge number of on-duty hours spent on non-patrol temporary assignments per year per officer ,1.2.2.3,160,20 days * shift length
+Average number of officers to be supervised by each field supervisor,1.2.3,6.5,
+"Percentage of field supervisor on-duty time spent on uncommitted patrol, reactive, and self-initiated/COP activities",1.2.4,25,
+"Type name, category 1 roadways in the APA",1.2.5.1,,
+"Average patrol speed (MPH), category 1 roadways in the APA .",1.2.5.2,30,
+"Patrol interval performance objective (hours), category 1 roadways in the APA.",1.2.5.3,8,
+"Type name, category 2 roadways in the APA",1.2.6.1,,
+"Average patrol speed (MPH), category 2 roadways",1.2.6.2,25,
+"Patrol interval performance objective (hours), category 2 roadways",1.2.6.3,8,
+"Type name, category 3 roadways in the APA",1.2.7.1,,
+"Average patrol speed (MPH), category 3 roadways",1.2.7.2,15,
+"Patrol interval performance objective (hours), category 3",1.2.7.3,48,
+Total number of days in the workload sample period,1.3.1,365,
+Total number of accidents handled by the APA during the sample period,1.3.2,,
+Average service time (hours) per accident.,1.3.3,1.5,
+Total number of other CFS handled by the APA during the sample period,1.3.4,,
+Average service time (hours) per CFS,1.3.5,0.8,
+Percentage of other CFS that cannot be preempted,1.3.6,20,
+Percentage of administrative activities that cannot be preempted,1.3.7,12,
+Percentage of self-initiated/COP activities that cannot be preempted,1.3.8,20,
+"Number of miles, category 1 roadways (Arterial)",1.4.1,,
+"Number of miles, category 2 roadways (Major)",1.4.2,,
+"Number of miles, ca'tegory 3 roadways (Residential)",1.4.3 ,,
+administrative time performance objective in minutes per hour per office,2.1,10,
+total time (hours) spent on administrative activities during the sample period,2.2.1,,
+total on-duty hours on patrol during the sample period,2.2.2,,
+fraction of time spent on administrative activities (2.2.1 / 2.2.2),2.2.3,,2.2.1 / 2.2.2
+"average number of minutes per hour per officer, multiply 2.2.3 * 60",2.2.4,12.57,2.2.3 * 60
+administrative time minutes per hour per office either 2.1 or 2.24,2.3,10,either 2.1 or 2.24
+Total number of accidents handled by the agency during the sample period,3.1.1,,use 1.3.2
+Average service time (hours) per accident.,3.1.2,1.5,use 1.3.3
+total obligated time for accidents within the APA during the sample period,3.1.3,,3.1.1 * 3.1.2
+total number of days in the sample period,3.1.4,365,use 1.3.1
+average workload per day for accidents,3.1.5,,3.1.3 / 3.1.4
+total number of other cfs within the apa during the sample period use 1.3.4,3.2.1,,use 1.3.4
+average service time (hours for each cfd,3.2.2,0.8,use 1.3.5
+total obligated time for other CFS within the APA during the sample period (3.2.1 * 3.2.2),3.2.3,,3.2.1 * 3.2.2
+total number of days in the sample period,3.2.4,365,use 1.3.1
+average workload per day for other CFS (hours) divide 3.2.3 / 3.2.4,3.2.5,,3.2.3 / 3.2.4
+total average workload per day within the APA (hours) add 3.1.5 + 3.2.5,3.3.1,,3.1.5 + 3.2.5
+Shift length (hours),3.3.2,8,use 1.2.1
+average number of on-duty officers required per day within the APA to meet the avg daily workload divide 3.3.1 / 3.3.2,3.3.3,,3.3.1 / 3.3.2
+self initiated perfomance objective time in minutes per hour per officr,4.1,11.67,
+total number of self-initiatied cnontacts during sample period,4.2.1,,
+totl time (hours) spent on self-initiated contacts during the sample period,4.2.2,,
+averaget time (hours) per self-initiated contact within the APA during the sample period,4.2.3,,4.2.2 / 4.2.1
+number of self-initiated contacts per shift per officer performance objective,4.2.4,,
+shift length (hours),4.2.5,,use 1.2.1
+number of self-initiated contacts per hour per officer divide 4.2.4 / 4.2.5,4.2.6,,4.2.4 / 4.2.5
+"self-initiated performance objective for the APA in minutes per hour per officer, multiply 60 * 4.2.3 * 4.2.6",4.2.7,,60 * 4.2.3 * 4.2.6
+total time (hours) spent on self-initiated contacts during the sample period,4.3.1,,use 4.2.2
+total on-duty hours on patrol during the sample period,4.3.2,,
+Fraction of time spent on self-initiated activities within the APA during the sample period divide 4.2.1 / 4.3.2,4.3.3,,4.2.1 / 4.3.2
+Average number of minutes per hour per officer to be spent on self-initiated activities within the APA multiple 60 * 4.3.3,4.3.4,8.57,60 * 4.3.3
+Minutes per hour per officer (proactive time) select either 4.1 or 4.2.7 or 4.3.4,4.4,8.57,use either 4.1 or 4.2.7 or 4.3.4
+average percent of time per officer to be spent on community oriented policing activities,4.5.1,7.5,
+fraction of time per hour per officer to be spent on community oriented policing divide 4.5.1 / 100,4.5.2,,4.5.1 / 100
+"minutes per hour per officer to be spent on community oriented policing, multiply 60 * 4.5.2",4.5.3,8,60 * 4.5.2
+proactive time (self-initaed and cop) minutes per hour per offier add 4.4 and 4.5.3,4.6,16.57,4.4 + 4.5.3
+shift length (hours),5.1.1,,use 1.2.1
+category 1 roadway type,5.1.2.1,,use 1.2.5.1
+miles of roadway (1.4.1),5.1.2.2,,use 1.4.1
+"Average patrol speed (MPH), category 1 roadways in the APA .",5.1.2.3,,use 1.2.5.2
+Performance objective patrol interval (hours),5.1.2.4,,use 1.2.5.3
+number of officers required per day to meet the patrol interval performance,5.1.2.5,,(24 * 5.1.2.2) / (5.1.2.3 * 5.1.1 * 5.1.2.4)
+category 2 roadway type,5.1.3.1,,use 1.2.6.1
+miles of roadway (1.4.2),5.1.3.2,,use 1.4.2
+"Average patrol speed (MPH), category 2 roadways",5.1.3.3,,use 1.2.6.2
+Performance objective patrol interval (hours),5.1.3.4,,use 1.2.6.3
+number of officers required per day to meet the patrol interval performance,5.1.3.5,,(24 * 5.1.3.2) / (5.1.3.3 * 5.1.1 * 5.1.3.4)
+Category 3 roadway type,5.1.4.1,,use 1.2.7.1
+miles of roadway (1.4.3),5.1.4.2,,use 1.4.3
+"Average patrol speed (MPH), category 3 roadways",5.1.4.3,,use 1.2.7.2
+performance objective patrol interval (hours),5.1.4.4,,use 1.2.7.3
+number of officers required per day to meet the patrol interval performance,5.1.4.5,,(24 * 5.1.4.2) / (5.1.4.3 * 5.1.1 * 5.1.4.4)
+total number of officers required per day to meet patrol interval performance within apa,5.1.5,,(5.1.2.5 + 5.1.3.5 + 5.1.4.5)
+shift length (hours),5.2.1.1,,use 1.2.1
+calculate the effective number of shifts per day,5.2.1.2,,24 / 5.2.1.1
+average daily number of on-duty officers for reactive activities (3.3.3),5.2.2.1,,use 3.3.3
+"average daily number of on-duty officers per shift for reactive activities, divide 5.2.2.1 / 5.2.1.2",5.2.2.2,,5.2.2.1 / 5.2.1.2
+"fraction of non-preemptable other CFS, divide 1.3.6 / 100",5.2.2.3,,1.3.6 / 100
+number of non preemptable other CFS multiply 5.2.2.3 * 1.3.4,5.2.2.4,,5.2.2.3 * 1.3.4
+calculate the fraction of non-preemptable reactive activities,5.2.2.5,,(1.3.2 + 5.2.24) / (1.3.2 + 1.3.4)
+fraction of non-preemptable administractive act,5.2.2.6,,(1.3.7) / 100
+fraction of non-preemptable self-initiated/COP activities,5.2.2.7,,(1.3.8) / 100
+administrative time minutes per hour per officer,5.2.2.8,,use 2.3
+"self-initiated/COP time minutes per hour per officer, use 4.6",5.2.2.9,,use 4.6
+calculate Kaf use the formula,5.2.2.10,,5.2.2.8 / (60 - 5.2.2.8 - 5.2.2.9)
+calculate,5.2.2.11,,(5.2.2.9) / 60 - 5.2.2.8 - 5.2.2.9)
+calculate,5.2.2.12,,5.2.2.10 + 5.2.2.11)
+calculate,5.2.2.13,,(5.2.2.6 * 5.2.2.10)
+calculate,5.2.2.14,,(5.2.2.7 * 5.2.2.11)
+calculate,5.2.2.15,,(5.2.2.13 + 5.2.2.14)
+calculate,5.2.2.16,,5.2.2.2 * (5.2.2.5 + 5.2.2.15) / (1 + 5.2.2.15)
+Performance objective percentage of emergency accidents and other CFS for which there will be at least one officer available,5.2.4.1,90,
+total number of on-duty officers required per shift to meet the immediate response performance objective,5.2.4.2,,"use 5.2.2.16, table selected for 5.2.3 and 5.2.4.1"
+calculate,5.2.4.3,,5.2.2.12 - 5.2.2.15
+calculate,5.2.4.4,,5.2.4.2 - 5.2.2.2 * (1 - 5.2.2.5 + 5.2.4.3) / 1 + 5.2.4.3
+determine the actual additional number of officers per shift needed per day to meet the immediate response performance objective select the larger of zero and 5.2.4.4,5.2.4.5,,"larger of 0, 5.2.4.4"
+number of additional on-duty officers required per da to meet the immediate response ,5.2.4.6,,(5.2.4.5 * 5.2.1.2) OR A.8
+shift length (hours),5.3.1.1,,use 1.2.1
+calculate the effective number of shifts per day,5.3.1.2,,24 / 5.3.1.1
+average daily number of on-duty officers for reactive activities (3.3.3),5.3.1.3,,use 3.3.3
+average daily number of on-duty officers per shift for reactive activities,5.3.1.4,,5.3.1.3 / 5.3.1.2
+area (square miles) of the apa,5.3.2.1,,
+average response speed (mph) for emergency reactive activities,5.3.2.2,40,
+average travel time performance objective (minutes) for emergency activities,5.3.2.3,6.39,
+maximum number of additional officers required per shift within the APA to meet theaverage travel time performance objective for emergency activities,5.3.2.4,,no value
+calculate,5.3.2.4.1,,40 / 5.3.2.2 * 5.3.2.3
+calculate,5.3.2.4.2,,5.3.2.4.1 * 5.3.2.4.1
+calculate,5.3.2.4.3,,5.3.2.4.2 * 5.3.2.1
+adjusted number of additional officers required to meet objective,5.3.3,,no value
+"fraction of non-preemptable other CFS, divide 1.3.6 / 100",5.3.3.1,,1.3.6 / 100
+number of non-preemptable other CFS,5.3.3.2,,5.3.3.1 * 1.3.4
+fraction of non-preemptable reactive activities,5.3.3.3,,(1.3.2 + 5.3.3.2) / (1.3.2 + 1.3.4)
+fraction of non-preemptive administrative activities,5.3.3.4,,1.3.7 / 100
+fraction of non-preemptable self-initiated/COP activities,5.3.3.5,,1.3.8 / 100
+administrative time minutes per hour per officer,5.3.3.6,,use 2.3
+"self-initiated/COP time minutes per hour per officer, use 4.6",5.3.3.7,,use 4.6
+calculate,5.3.3.8,,5.3.3.6 / (60 - 5.3.3.6 - 5.3.3.7)
+calculate,5.3.3.9,,5.3.3.7 / (60 - 5.3.3.6 - 5.3.3.7)
+calculate,5.3.3.10,,5.3.3.8 + 5.3.3.9
+calculate,5.3.3.11,,5.3.3.4 * 5.3.3.8
+calculate,5.3.3.12,,5.3.3.5 * 5.3.3.9
+calcuate,5.3.3.13,,5.3.3.11 + 5.3.3.12
+calcuate,5.3.3.14,,5.3.3.10 - 5.3.3.13
+calcuate,5.3.3.15,,5.3.2.4.3 - 5.3.1.4 * (1 - 5.3.3.3 + 5.3.3.14) / 1 + 5.3.3.14
+actual number of additional officers required to meet objective,5.3.4,,"larger of 0, 5.3.3.15"
+actual number of additional officers required to meet objective,5.3.5,,5.3.1.2 * 5.3.4
+shift length (hours),5.4.1,,use 1.2.1
+area (square miles) of the apa,5.4.2,,use 5.3.2.1
+average response speed (mph) for non-emergency reactive activities,5.4.3,20,
+average travel time performance objective (minutes) for non-emergency activities,5.4.4,19.2,
+number of officers required to meet average travel time,5.4.5,,no value
+calculate,5.4.5.1,,40 / 5.4.3 * 5.4.4
+calculate,5.4.5.2,,5.4.5.1 * 5.4.5.1
+calculate,5.4.5.3,,(24 * 5.4.5.2 * 5.4.2) / 5.4.1
+number of officers required to meet the travel time performance objectives,5.5,,larger of 5.3.5 and 5.4.5.3
+total officers required within the APA,5.6,,larger of 5.2.4.6 and 5.5
+averge number of officers required per day for uncommitted patrol within the APA,5.7,,larger of 5.1.5 and 5.6
+administrative time minutes per hour per officer,6.1.1,,use 2.3
+average number of officers required per day to meet reactive time workload,6.1.2,,use 3.3.3
+"self-initiated/COP time minutes per hour per officer, use 4.6",6.1.3,,use 4.6
+average number of officers required per day to meet patrol requirements,6.1.4,,use 5.7
+average total number of on-duty officers required per day,6.1.5,,(6.1.2 + 6.1.4) / 1 - (6.1.1 / 60) - (6.1.3) / 60
+percentage of time patrol units are staffed with two officers,6.2.1,85,
+fraction of time patrol units within the apa are staffed with two officers,6.2.2,,6.2.1 / 100
+adjustment factor,6.2.3,,1 + 6.2.2
+average total number of on-duty officers required per day,6.2.4,,6.1.5 * 6.2.3
+"average minimum number of on-duty officers required per day for all patrol activities, based on agency policy",6.3.1,100,
+average daily number of on duty officers required,6.3.2,,"larger of 6.2.4, 6.3.1"
+average number of officers to be supervised by each field supervisor,7.1.1,,use 1.2.3
+"percentage of field supervisor on-duty time spent on uncommitted patrol, reactive, and self-initiated/COP activities",7.1.2,,use 1.2.4
+fraction of field supervisor time spent on patrol activities,7.1.3,,7.1.2 / 100
+total number of on-duty officers required per day within the aPA,7.1.4,,use 6.3.2
+adjustment factor,7.1.5,,7.1.1 / (7.1.1 + 7.1.3)
+adjusted daily number of full time on duty officer required per day,7.1.6,,7.1.5 * 7.1.4
+name of special assignment 1,7.2.1.1,,
+average number of on-duty officers on specalized assignment 1,7.2.1.2,2,
+percentage of on-duty time spent on patrol by officers assigned to special assignments 1,7.2.1.3,2.5,
+percentage of on-duty time spent on non-patrol activities,7.2.1.4,,100 - 7.2.1.3
+fraction of non-duty time spent on non-patrol activities by officers assigned to special assignment,7.2.1.5,,7.2.1.4 / 100
+adjusted daily number o on-duty officers assigned to special assignment 1,7.2.1.6,,(7.2.1.2 * 7.2.1.5 * 7.1.5)
+adjusted total daily number of on-duty officers required per day,7.2.4,,7.1.6 + 7.2.1.6 + 7.2.2.6 + 7.2.3.6
+number of on duty field supervisors,7.3,,no value
+total number of on-duty field supervisors required per day,7.3.1,,7.2.4 / 7.1.1
+on duty officers and field supervisors required per day,8.1,,no value
+total number of on-duty officers per day,8.1.1,,use 7.2.4
+total number of on-duty field supervisors per day,8.1.2,,use 7.3.1
+shift length (hours),8.2.1,,use 1.2.1
+total hours on one shift during one year,8.2.2,,365 * 8.2.1
+average work week (hours),8.2.3,,use 1.2.2.1
+average number of paid hours of work per year,8.2.4,,365 * 8.2.3 / 7
+average number of benefit paid hours off per year per officer,8.2.5,,use 1.2.2.2
+average number of on-duty hours on temporary assignments,8.2.6,,use 1.2.2.3
+average number of on-duty hours on patrol per year per officer,8.2.7,,8.2.4 - 8.2.5 - 8.2.6
+shift relief factor,8.2.8,,8.2.2 / 8.2.7
+total number of patrol officers,8.3.1,,8.1.1 * 8.2.8
+total field supervisors,8.3.2,,8.1.2 * 8.2.8
+total officers and field supervisors,8.3.3,,8.3.1 + 8.3.2
+number of command personnel - agency policy,8.4,2,
+number of officers within the APA,8.5.1,,use 8.3.1
+number of field supervisors,8.5.2,,use 8.3.2
+number of command personnel,8.5.3,,use 8.4
+total required patrol staff,8.5.4,,8.5.1 + 8.5.2 + 8.5.3
